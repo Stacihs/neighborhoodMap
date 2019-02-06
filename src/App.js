@@ -4,6 +4,10 @@ import MapView from './components/MapView';
 import './App.css'
 
 class App extends Component {
+  state = {
+    lat: 29.4428476,
+    lng: -98.4800684
+  }
   
   render() {
     return (
