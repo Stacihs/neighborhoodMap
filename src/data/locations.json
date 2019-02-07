@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Southerleigh Fine Food and Brewery",
+        "position": {
+            "lat": 29.4425381,
+            "lng": -984806333
+            }
+    },
+    {
+        "name": "Hotel Emma",
+        "position": {
+            "lat": 29.4427702,
+            "lng": -98480922
+        }
+    },
+    {
+        "name": "Blue Box Bar",
+        "position": {
+            "lat": 29.4434269,
+            "lng": -98.4806148
+        }
+    },
+    {
+        "name": "Boiler House",
+        "position": {
+            "lat": 29.4428184,
+            "lng": -98.4805059
+        }
+    },
+    {
+        "name": "Jazz, TX",
+        "position": {
+            "lat": 29.4428481,
+            "lng": -98.4805571
+        }
+    }
+]
