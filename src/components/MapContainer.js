@@ -44,7 +44,7 @@ const mapStyles = {
 //   }
 // ];
 
-const mapKey = 'AIzaSyA3THyJjtkXAsI9yRvIMcAAjuzFKSkUqKI';
+const mapKey = '';
 
 
 export class MapContainer extends Component {
