@@ -77,10 +77,11 @@ export class MapContainer extends Component {
 
     let mapMarkers = [];
 
-    mapMarkers = locations.map( location => <Marker
-      key={location.index}
+    mapMarkers = locations.map( (location) => <Marker
+      key={location.name}
       name={location.name}
       position={location.position}
+      onClick={this.onMarkerClick}
     />);
 
     return (
@@ -93,7 +94,16 @@ export class MapContainer extends Component {
             lng: -98.4800684
         }}
       >
-      {mapMarkers}
+       {mapMarkers}
+       <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}
+          onClose={this.onClose}
+        >
+          <div>
+            <h4>{this.state.selectedPlace.name}</h4>
+          </div>
+        </InfoWindow>
       </Map>
     );
   }
