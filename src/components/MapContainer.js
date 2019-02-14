@@ -7,7 +7,7 @@ import {
 } from 'google-maps-react';
 
 
-const API_KEY = 'AIzaSyCqO1E57agaq08dYIgt896lt9ZMqfHA5Mk';
+const API_KEY = process.env.REACT_APP_API_KEY;
 export class MapContainer extends Component {
   state = {
     activeMarker: {},
