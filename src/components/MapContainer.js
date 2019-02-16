@@ -16,13 +16,13 @@ export class MapContainer extends Component {
     mapMarkers: []
   };
 
-  onMarkerClick = (props, marker, e) => { 
+  onMarkerClick = (props, marker, e) => {
     if (this.state.showingInfoWindow) {
       this.setState({
         showingInfoWindow: false,
         activeMarker: null
-      })}
-       else {
+        });
+    } else {
         this.setState({
           selectedPlace: props,
           activeMarker: marker,
@@ -30,7 +30,7 @@ export class MapContainer extends Component {
         });
       }
   };
-  
+
   onClose = props => {
     if (this.state.showingInfoWindow) {
       this.setState({
